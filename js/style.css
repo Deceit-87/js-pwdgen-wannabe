@@ -1,0 +1,68 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.password-container{
+    text-align: center;
+    color: white;
+    padding: 30px 0;
+    margin: auto auto;
+    width: 40%;
+    height:200px ;
+    background-color:  lightskyblue   ;
+}
+
+#user-password{
+    filter: blur(15px);
+}
+.password-container >div:active #user-password{
+    filter: blur(0px);
+}
+
+
+.password-container > div{
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 50px auto;
+    width: 50%;
+    padding: 20px 10px;
+    background-color: rgb(88, 245, 245 , 0.5);
+    position: relative;
+    
+}
+
+.password-container, .password-container > div{
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #adadad;
+}
+
+.blur-container{
+    
+    
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(39, 4, 197, 0.5);
+   
+    position: absolute;
+
+}
+
+.blur-container:active {
+    display: none;
+}
+
+.show {
+    filter: blur(0);
+    color: mediumspringgreen;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 9999999;
+}
